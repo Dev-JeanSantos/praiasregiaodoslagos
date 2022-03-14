@@ -36,6 +36,7 @@ public class PraiasController {
         return ResponseEntity.created(uri).body(request);
     }
 
+
     @GetMapping
     public ResponseEntity<Page<PraiaResponse>> findAllPaged(
             @RequestParam(value = "page", defaultValue = "0") Integer page,
