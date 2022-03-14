@@ -20,7 +20,7 @@ public class CidadeRequest implements Serializable {
     @NotNull
     private Double densidadeDemografica;
     @NotNull
-    @UniqueValue(domainClass = Cidade.class, fieldName = "codigoIbge")
+    @UniqueValue(domainClass = Cidade.class, fieldName = "codigoIbge", message = "Cidade existente na base de dados")
     private Long codigoIbge;
     @NotBlank
     private String linkImage;
